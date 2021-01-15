@@ -2,7 +2,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
-public class SandwichExtractorTest {
+public class TestSandwichExtractor {
     @Test
     public void testIfEmptyArrayIsReturnedWhenSandwichIsEmpty() {
         String assertMessage =
