@@ -7,11 +7,11 @@ repositories {
 }
 
 dependencies {
-	testImplementation('junit:junit:4.13.1')
+	testImplementation "junit:junit:4.11"
 }
 
 test {
-	useJUnitPlatform()
+	useJUnit()
     	testLogging {
         	events "passed", "skipped", "failed", "standardOut", "standardError"
     	}
