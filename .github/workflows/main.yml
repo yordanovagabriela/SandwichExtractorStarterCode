@@ -1,0 +1,22 @@
+    on: 
+      push:
+        branches:
+
+    jobs:
+      build:
+        name: Autograding
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+
+          # checkout secret tests
+          # my_pat is the variable name used when adding the secret to org
+          - name: Check out tests private repo
+            uses: actions/checkout@master
+            with:
+              repository: testgitclassroom-java/SandwichExtractorTests
+              token: ${{ token }}
+              path: .
+
+          # run autograding tests
+          - uses: education/autograding@v1
