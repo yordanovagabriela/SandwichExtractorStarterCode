@@ -15,7 +15,6 @@
             uses: actions/checkout@master
             with:
               repository: testgitclassroom-java/SandwichExtractorTests
-              token: ${{ secrets.token }}
               path: src/test/java
 
           # run autograding tests
