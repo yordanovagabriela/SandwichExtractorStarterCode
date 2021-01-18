@@ -1,0 +1,12 @@
+{"tests": [
+    {
+      "name": "TestSandwichExtractor.java",
+      "setup": "",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+]}
